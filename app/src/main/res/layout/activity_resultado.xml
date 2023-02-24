@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/material_dynamic_primary80"
+    tools:context=".ActivityResultado">
+
+
+    <Button
+        android:id="@+id/btnregresar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="200dp"
+        android:backgroundTint="@android:color/holo_purple"
+        android:text="REGRESAR"
+        android:textStyle="bold"
+        app:icon="@drawable/baseline_arrow_back_24" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="170dp"
+        android:layout_marginRight="10dp"
+        android:text="Resultado"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtresultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:ems="10"
+        android:hint="Resultado"
+        android:inputType="number|numberDecimal"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"/>
+
+</LinearLayout>

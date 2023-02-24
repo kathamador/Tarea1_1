@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/material_dynamic_primary80"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="15dp"
+            android:text="Numero 1"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/num1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:ems="10"
+            android:hint="Ingrese el numero uno"
+            android:inputType="number|numberDecimal"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:text="Numero 2"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/num2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:ems="10"
+            android:hint="Ingrese el numero dos"
+            android:inputType="number|numberDecimal"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnsuma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginRight="70dp"
+            android:backgroundTint="@android:color/holo_purple"
+            android:text="SUMA"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            app:icon="@drawable/baseline_control_point_24" />
+
+        <Button
+            android:id="@+id/btnresta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="70dp"
+            android:backgroundTint="@android:color/holo_purple"
+            android:text="RESTA"
+            android:textStyle="bold"
+            app:icon="@drawable/baseline_remove_circle_outline_24" />
+
+        <Button
+            android:id="@+id/btndivision"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="70dp"
+            android:backgroundTint="@android:color/holo_purple"
+            android:text="DIVISIÓN"
+            android:textStyle="bold"
+            app:icon="@drawable/division__2_" />
+
+        <Button
+            android:id="@+id/btnmultiplicacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="70dp"
+            android:backgroundTint="@android:color/holo_purple"
+            android:text="MULTIPLICACIÓN"
+            android:textStyle="bold"
+            app:icon="@drawable/marca_x__1_" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

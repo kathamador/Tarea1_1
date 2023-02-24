@@ -33,10 +33,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 sumarDosNumeros();
-                limpiar();
-                Intent intent = new Intent(getApplicationContext(),ActivityResultado.class);
-                intent.putExtra("Resultado",resultado);
-                startActivity(intent);
+                if(numero1.getText().toString().isEmpty() && numero2.getText().toString().isEmpty()){
+                    Toast.makeText(MainActivity.this, "No dejar campos vacios.", Toast.LENGTH_LONG).show();
+                }
+                else{
+                    Intent intent = new Intent(getApplicationContext(),ActivityResultado.class);
+                    intent.putExtra("Resultado",resultado);
+                    startActivity(intent);
+                    limpiar();
+                }
             }
 
         });
@@ -44,24 +49,33 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 restarDosNumeros();
-                limpiar();
-                Intent intent = new Intent(getApplicationContext(),ActivityResultado.class);
-                intent.putExtra("Resultado",resultado);
-                startActivity(intent);
+                if(numero1.getText().toString().isEmpty() && numero2.getText().toString().isEmpty()){
+                    Toast.makeText(MainActivity.this, "No dejar campos vacios.", Toast.LENGTH_LONG).show();
+                }
+                else{
+                    Intent intent = new Intent(getApplicationContext(),ActivityResultado.class);
+                    intent.putExtra("Resultado",resultado);
+                    startActivity(intent);
+                    limpiar();
+                }
             }
         });
         btndivision.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (Double.parseDouble(numero2.getText().toString()) == 0){
+
+                if(numero1.getText().toString().isEmpty() && numero2.getText().toString().isEmpty()){
+                    Toast.makeText(MainActivity.this, "No dejar campos vacios.", Toast.LENGTH_LONG).show();
+                }
+                else if (Float.parseFloat(numero2.getText().toString()) == 0){
                     Toast.makeText(MainActivity.this, "No se puede dividir entre cero.", Toast.LENGTH_SHORT).show();
                 }
                 else {
                     dividirDosNumeros();
-                    limpiar();
                     Intent intent = new Intent(getApplicationContext(),ActivityResultado.class);
                     intent.putExtra("Resultado",resultado);
                     startActivity(intent);
+                    limpiar();
                 }
             }
         });
@@ -69,10 +83,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 multiDosNumeros();
-                limpiar();
-                Intent intent = new Intent(getApplicationContext(),ActivityResultado.class);
-                intent.putExtra("Resultado",resultado);
-                startActivity(intent);
+                if(numero1.getText().toString().isEmpty() && numero2.getText().toString().isEmpty()){
+                    Toast.makeText(MainActivity.this, "No dejar campos vacios.", Toast.LENGTH_LONG).show();
+                }
+                else{
+                    Intent intent = new Intent(getApplicationContext(),ActivityResultado.class);
+                    intent.putExtra("Resultado",resultado);
+                    startActivity(intent);
+                    limpiar();
+                }
             }
         });
     }

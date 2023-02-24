@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#81D4FA"
     android:orientation="vertical"
-    android:background="@color/material_dynamic_primary80"
     tools:context=".ActivityResultado">
 
 
@@ -45,6 +45,6 @@
         android:inputType="number|numberDecimal"
         android:textAlignment="center"
         android:textSize="24sp"
-        android:textStyle="bold"/>
+        android:textStyle="bold" />
 
 </LinearLayout>
